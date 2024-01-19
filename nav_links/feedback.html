@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Feedback</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #aling_item {
+            text-align: right;
+        }
+
+        .container {
+            /* box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6); */
+            box-shadow: 0 0 10px 0px gray, 0px 0px 10px 0px rgba(146, 137, 137, 0.521);
+        }
+
+        @media only screen and (max-width:570px) {
+            #cntr_img {
+                text-align: center;
+            }
+
+            #cntr_text {
+                text-align: center;
+
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="..\bootstrap-5.0.2-dist\css\bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 " id="cntr_img">
+                <a href="..\index_nextag\index.html"> <img src="..\home_images\mainlogo.png"></a>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" id="aling_item">
+                <div style="margin-top: 20px;" id="cntr_text">
+                    <h3>Online Feedback</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12" style="margin-top: 20px;">
+                <p>Thank you for taking the time to tell us about your website experience, your feedback will be used to
+                    help improve the Nextag website. If you require a response about an order or query. <br> <br> The
+                    questions should only take a minute or two to help us direct your feedback to the right place. We
+                    use an independent research company.</p>
+            </div>
+        </div>
+
+        <br> <br>
+        <form class="row g-3">
+            <!-- <form class="was-validated" > -->
+
+            <h4>How satisfied were you with the Nextag website today?</h4>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" />
+                <label class="form-check-label" for="validationFormCheck2">Very dissatisfied
+                </label>
+            </div>
+            <div class="form-check mb-3">
+                <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" />
+                <label class="form-check-label" for="validationFormCheck3">Dissatisfied</label>
+
+            </div>
+
+            <div class="form-check mb-3">
+                <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" />
+                <label class="form-check-label" for="validationFormCheck3">Neither satisfied or dissatisfied</label>
+
+            </div>
+
+            <div class="form-check mb-3">
+                <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" />
+                <label class="form-check-label" for="validationFormCheck3">Satisfied</label>
+
+            </div>
+
+            <div class="form-check mb-3">
+                <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" />
+                <label class="form-check-label" for="validationFormCheck3">Very satisfied</label>
+
+            </div>
+            <br> <br><br>
+            <h4>Nextag may contact you about your feedback. If you're happy to be contacted, provide your contact
+                details below.</h4>
+            <label id="texe_error"></label>
+            <div class="form-outline">
+                <textarea class="form-control is-valid" id="text_area"
+                    placeholder="Please give details of your feedback below:" required></textarea>
+
+                <div class="invalid-feedback">Please enter a message in the textarea.</div>
+            </div>
+
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label id="firstname"></label>
+                    <div class="form-outline">
+
+                        <input type="text" class="form-control" id="frst_name" required placeholder="First Name" />
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label id="lasttname"></label>
+                    <div class="form-outline">
+                        <input type="text" class="form-control" id="last_name" required placeholder="Last Name" />
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label id="emaal"></label>
+                    <div class="input-group form-outline">
+
+                        <span class="input-group-text" id="">@</span>
+                        <input type="email" class="form-control" id="emal" aria-describedby="inputGroupPrepend2"
+                            required placeholder="Email" />
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div class="form-outline">
+                        <label id="citi"></label>
+                        <input type="text" class="form-control " id="city" required placeholder="country" />
+
+                    </div>
+                </div>
+
+
+                <br> <br> <br> <br>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit" id="sbt" onclick="feedback()">Submit feedback</button>
+                </div>
+                <br> <br> <br> <br>
+            </form>
+
+
+    </div>
+    <script src="..\bootstrap-5.0.2-dist\js\bootstrap.min.js"></script>
+    <script>
+        function feedback() {
+            // var taxt = document.getElementById('text_area').value;
+            // var fs_name = document.getElementById('frst_name').value;
+            // var ls_name = document.getElementById('last_name').value;
+            // var eml = document.getElementById('emal').value;
+            // var cty = document.getElementById('city').value;         
+
+
+
+            // if (fs_name, ls_name,taxt,eml,cty.length == 0) {
+            //     alert("Please Fill complete Feedback");
+            // }
+
+            // else {
+            //     alert(fs_name + " " + ls_name + " " + " Thanks For Feedback ");
+            // }
+
+
+            // if (taxt.length == 0) {
+            //     document.getElementById('texe_error').innerHTML = "Please enter a message in the textarea"
+            //     document.getElementById('texe_error').style.color = "red"
+            // }
+
+            // else if (fs_name.length == 0) {
+            //     document.getElementById('firstname').innerHTML = "fill this side"
+            //     document.getElementById('firstname').style.color = "red"
+            // }
+
+            // else if (ls_name.length == 0) {
+            //     document.getElementById('lasttname').innerHTML = "fill this side"
+            //     document.getElementById('lasttname').style.color = "red"
+            // }
+            // else if (eml.length == 0) {
+            //     document.getElementById('emaal').innerHTML = "fill this side"
+            //     document.getElementById('emaal').style.color = "red"
+            // }
+            // else if (cty.length == 0) {
+            //     document.getElementById('citi').innerHTML = "fill this side"
+            //     document.getElementById('citi').style.color = "red"
+            // }
+            // else {
+            //      alert(fs_name + " " + ls_name + " " + " Thanks For Feedback ");
+            //  }
+            var taxt = document.getElementById('text_area').value;
+            var taxtrule = /^[a-zA-Z ]+$/;
+
+
+            if (taxt.length > 0) {
+                if (taxtrule.test(taxt) == true) {
+
+                    document.getElementById('texe_error').innerHTML = "";
+                    // alert("Welcome " + UserName);
+                }
+
+                else {
+                    document.getElementById('texe_error').innerHTML = "Only  Alphabets Are Allowed";
+                    document.getElementById('texe_error').style.color = "red"
+                }
+            }
+            else {
+                document.getElementById('texe_error').innerHTML = "Please enter a message in the textarea";
+                document.getElementById('texe_error').style.color = "red"
+            }
+
+            var fs_name = document.getElementById('frst_name').value;
+
+            if (fs_name.length > 0) {
+                if (taxtrule.test(fs_name) == true) {
+
+                    document.getElementById('firstname').innerHTML = "";
+                    // alert("Welcome " + UserName);
+                }
+
+                else {
+                    document.getElementById('firstname').innerHTML = "Only  Alphabets Are Allowed";
+                    document.getElementById('firstname').style.color = "red"
+                }
+            }
+            else {
+                document.getElementById('firstname').innerHTML = "First Name is required";
+                document.getElementById('firstname').style.color = "red"
+            }
+
+            var ls_name = document.getElementById('last_name').value;
+
+            if (ls_name.length > 0) {
+                if (taxtrule.test(ls_name) == true) {
+
+                    document.getElementById('lasttname').innerHTML = "";
+                    // alert("Welcome " + UserName);
+                }
+
+                else {
+                    document.getElementById('lasttname').innerHTML = "Only  Alphabets Are Allowed";
+                    document.getElementById('lasttname').style.color = "red"
+                }
+            }
+            else {
+                document.getElementById('lasttname').innerHTML = "Last Name is required";
+                document.getElementById('lasttname').style.color = "red"
+            }
+
+            var cit = document.getElementById('city').value;
+
+            if (cit.length > 0) {
+                if (taxtrule.test(cit) == true) {
+
+                    document.getElementById('citi').innerHTML = "";
+                    // alert("Welcome " + UserName);
+                }
+
+                else {
+                    document.getElementById('citi').innerHTML = "Only  Alphabets Are Allowed";
+                    document.getElementById('citi').style.color = "red";
+                }
+            }
+            else {
+                document.getElementById('citi').innerHTML = "Country Name  is required";
+                document.getElementById('citi').style.color = "red"
+            }
+
+            var eml = document.getElementById('emal').value;
+            if (eml.length > 0) {
+                document.getElementById('emaal').innerHTML = "";
+            }
+            else {
+                document.getElementById('emaal').innerHTML = "Email is required";
+                document.getElementById('emaal').style.color = "red"
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>

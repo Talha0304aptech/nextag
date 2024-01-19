@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brands comparison</title>
+    <link rel="stylesheet" href="..\styling\home_style.css">
+    <link rel="stylesheet" href="..\bootstrap-5.0.2-dist\css\bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/b1238412ed.js" crossorigin="anonymous"></script>
+    <style>
+        td img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color: #f8f8ff88;">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="..\index_nextag\index.html" style="margin-left: 25px;"> <img
+                        src="..\home_images\mainlogo.png" width="235px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" style="align-items: center;">
+                        <li class="nav-item">
+                            <a class="nav-link active mx-3" id="n" aria-current="page"
+                                href="..\index_nextag\index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown" style="width: 100px;">
+                            <a class="nav-link dropdown-toggle mx-3" id="n" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                brands
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="..\brands\gucci.html">Gucci</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="..\brands\Louis Vuitton.html">Louis Vuitton</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="..\brands\Alexander.html">Alexander McQueen</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" id="n" href="..\COMPARISON\COMPARISON.html"
+                                style="color: #3f0101;">comparison</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" id="n" href="..\nav_links\account.html"> Account</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" id="n" href="..\nav_links\contact_us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" id="n" href="..\nav_links\about.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <h2 class="feature_title">Comparison</h2>
+    <div class="container">
+        <div class="col-md-9 mx-auto">
+            <table class="table">
+                <tr class="bg-light">
+                    <th>Select Product</th>
+
+                    <th width="300px">
+                        <select class="form-control" id="select1" onchange="item1(this.value)">
+                            <option value="0">--Select Anyone --</option>
+                        </select>
+                    </th>
+
+
+                    <th width="300px">
+                        <select class="form-control" id="select2" onchange="item2(this.value)">
+                            <option value="0">--Select Anyone --</option>
+                        </select>
+                    </th>
+
+
+                </tr>
+
+                <tr>
+                    <th>Product Image</th>
+                    <td>
+                        <img src="..\COMPARISON\No-Image-Placeholder.png" id="img1">
+                    </td>
+
+                    <td>
+                        <img src="..\COMPARISON\No-Image-Placeholder.png" id="img2">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Product Price</th>
+                    <td id="price1">N/A</td>
+                    <td id="price2">N/A</td>
+                </tr>
+
+                <tr>
+                    <th>Product Brand</th>
+                    <td id="brand1">N/A</td>
+                    <td id="brand2">N/A</td>
+                </tr>
+
+                <tr>
+                    <th>Product Details</th>
+                    <td id="Detail1">N/A</td>
+                    <td id="Detail2">N/A</td>
+                </tr>
+
+
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <!-- =================footer=================== -->
+    <!-- =================== footer ===================== -->
+  <div class="myfooter">
+    <div class="mycontainer">
+        <div class="row_m">
+            <div class="foter-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Andorid and ios mobile phone.</p>
+                <div class="fot_Aaplogo">
+                    <a href="https://play.google.com/" target="_blank"><img
+                            src="..\home_images\play-store.png"></a>
+                    <a href="https://www.apple.com/app-store/" target="_blank"> <img
+                            src="..\home_images\app-store.png"></a>
+                </div>
+            </div>
+
+            <div class="foter-col-2">
+                <a href="..\index_nextag\index.html"><img src="..\home_images\foot_logo.png"></a>
+                <p>Our Puropse IS To Sustainably Make the <br>Pleasure and Benefits of Suports Accessible
+                </p>
+            </div>
+
+            <div class="foter-col-3">
+                <h3> Useful Links </h3>
+                <ul>
+                    <a href="..\nav_links\account.html">
+                        <li>ACCOUNT</li>
+                    </a>
+                    <a href="..\nav_links\contact_us.html">
+                        <li>Contact US</li>
+                    </a>
+                    <a href="..\nav_links\about.html">
+                        <li>About Us</li>
+                    </a>
+                    <a href="..\nav_links\return_policy.html">
+                        <li>Return and Exchange Poilcy</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="foter-col-4">
+                <br><br>
+                <h3> Follow Us </h3>
+                <ul>
+                    <li> <a href="https://www.facebook.com/LouisVuitton/" target="_blank">
+                            <i class="fa-brands fa-facebook fa-2xl" style="color: #0656e0;">
+                        </a></i><br>
+                    <li> <a href="https://twitter.com/LouisVuitton?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                            target="_blank">
+                            <i class="fa-brands fa-twitter fa-2xl" style="color: #135bd8;"></i>
+                        </a></li>
+                    <li> <a href="  https://www.instagram.com/louisvuitton/?hl=en" target="_blank">
+                            <i class="fa-brands fa-instagram fa-2xl" style="color: #a20b86;"></i>
+                        </a></li>
+                    <!-- <li><i class="fa-brands fa-youtube fa-2xl" style="color: #ba1212;"></i></li> -->
+                </ul>
+
+                <a href="..\nav_links\feedback.html" target="_blank" class="feedback_btn"
+                    id="fedback_decoration">Leave feedback</a>
+            </div>
+        </div>
+        <hr>
+        <p class="fot_copyright">&copy NexTag 2023</p>
+    </div>
+</div>
+
+    <script src="..\bootstrap-5.0.2-dist\js\bootstrap.min.js"></script>
+</body>
+
+</html>
+<script src="..\COMPARISON\comprson.js"></script>
+<script>
+    for (var i = 1; i < product.length; i++) {
+        document.getElementById("select1").innerHTML += `<option value="${i}">${product[i].title}</option>`;
+
+        document.getElementById("select2").innerHTML += `<option value="${i}">${product[i].title}</option>`;
+    }
+    function item1(a) {
+        var select2 = document.getElementById("select2").value;
+        if (a != select2) {
+            document.getElementById("img1").src = product[a].image
+            document.getElementById("price1").innerHTML = product[a].price
+            document.getElementById("Detail1").innerHTML = product[a].description
+            document.getElementById("brand1").innerHTML = product[a].brand;
+            document.getElementById("price1").style.color = "black"
+        }
+        else {
+            select2 = document.getElementById("select1").selectedIndex = 0;
+            document.getElementById("img1").src = product[0].image
+            document.getElementById("price1").innerHTML = "product is same can not compare "
+            document.getElementById("price1").style.color = "red"
+            document.getElementById("Detail1").innerHTML = ""
+            document.getElementById("brand1").innerHTML = ""
+        }
+    }
+
+    function item2(a) {
+        var select1 = document.getElementById("select1").value;
+        if (a != select1) {
+            document.getElementById("img2").src = product[a].image
+            document.getElementById("price2").innerHTML = product[a].price
+            document.getElementById("Detail2").innerHTML = product[a].description
+            document.getElementById("brand2").innerHTML = product[a].brand
+            document.getElementById("price2").style.color = "black"
+        }
+
+        else {
+            select2 = document.getElementById("select2").selectedIndex = 0;
+            document.getElementById("img2").src = product[0].image
+            document.getElementById("price2").innerHTML = "same brand product are not comparison"
+            document.getElementById("price2").style.color = "red"
+            document.getElementById("Detail2").innerHTML = ""
+            document.getElementById("brand2").innerHTML = ""
+        }
+    }
+</script>
